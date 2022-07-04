@@ -1,12 +1,15 @@
 function isPrime(n) {
-    let p = true;   
-   for(let i=0; i <= n; i++){
-       
-       if(n%2 === 0 ){
-           p = false;
-       }
-   }
-   return p;
-   }
-   
-   console.log(isPrime(4))
+  let p = true;
+  if (n < 2) {
+    return p;
+  }
+
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      p = false;
+    }
+  }
+  return p;
+}
+
+console.log(isPrime(5));
