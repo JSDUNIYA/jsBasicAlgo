@@ -1,3 +1,4 @@
+// Big 0 - o(n)
 function fib(n) {
   let z = [0, 1];
   while (n > 2) {

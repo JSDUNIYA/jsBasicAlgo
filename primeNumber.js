@@ -1,3 +1,5 @@
+// Big 0 - o(n)
+
 function isPrime(n) {
   let p = true;
   if (n < 2) {
