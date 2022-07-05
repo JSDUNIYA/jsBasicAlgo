@@ -9,3 +9,30 @@ function fib(n) {
 }
 
 console.log(fib(7));
+
+
+//recurisive fibonaci solution 1st try 
+
+var  x = [0,1];
+function recfibonaci(n){
+    if(n == 1){
+        return x[x.length-1];
+    } else if (n == 0){
+        return x[x.length-2] 
+    } else {
+        x.push(x[x.length-1] + x[x.length-2])
+    }
+    return recfibonaci(n-1);
+}
+
+console.log(recfibonaci(6))
+
+// Best recursive solution 0(2N) this is not good solution
+
+function recusriveFibonaci(n){
+    if(n < 2){
+        return n;
+    }
+    return recusriveFibonaci(n-1) + recusriveFibonaci(n-2);
+}
+console.log(recusriveFibonaci(6))
